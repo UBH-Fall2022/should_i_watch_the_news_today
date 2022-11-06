@@ -1,4 +1,5 @@
 # Training a custom model for classification using Cohere 
+- The NLP model is created and trained using Cohere (https://cohere.ai/use-case-sentiment-analysis)
 - The training file is a Comma Separated Values (CSV) file with a column for text and another for the number of the class.
 - The CSV file can be prepared in Excel or in text format like this with a .csv extension.
 - The CSV file is uploaded into the dashboard.
