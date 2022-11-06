@@ -6,11 +6,9 @@ from time import sleep
 from tkinter import ALL
 from datetime import date
 import cohere 
-import pandas as pd
 from django.conf import settings
 from django.http import JsonResponse
 from rest_framework.decorators import api_view
-import json
 from collections import Counter
 
 
