@@ -60,19 +60,11 @@ def search(request):
         
         pred_count = Counter(preds)
         positives = pred_count['Positive']
-        negatives = pred_count['Negative']
-        neutral = pred_count['Neutral']
+        analytics = positives / float(len(preds))        
 
-        analytics = positives - negatives
+        res={"score":analytics,"predictions":preds}
 
-        if analytics < 0:
-            analytics = 0
-        
-        score=(analytics/len(preds))*100
-        
-
-        res={"score":score,"predictions":preds}
-
+        print(analytics)
     return JsonResponse(res)
 
 
